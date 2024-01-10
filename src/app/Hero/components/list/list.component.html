@@ -1,0 +1,23 @@
+<h1>Listado de Pilares</h1>
+
+<div *ngIf="deletedH; else noDelet">
+  <h3>Hashira borrado <small class="text-danger">{{deletedH}} </small> </h3>
+</div>
+
+<ng-template #noDelet>
+  <h3>No ha borrado nada</h3>
+</ng-template>
+
+
+<button
+*ngIf="hashiras.length>0"
+  (click)="removeHashira()"
+  class="btn btn-outline-danger">
+  Borrar último Pilar
+</button>
+
+<ul class=" mt-2 list-group">
+  <li *ngFor="let name of hashiras"
+  class="list-group-item"> {{name}} </li>
+
+</ul>
