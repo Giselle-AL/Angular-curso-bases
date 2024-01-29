@@ -1,0 +1,14 @@
+<h1>Thousand Sunny</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <!--componente de listado -->
+    <app-anime-list [strawhatslist]="strawhats"></app-anime-list>
+  </div>
+  <div class="col">
+    <!--Componente de formulario-->
+    <app-add-form (onNewCharacter)="onNewCharacter($event)"> </app-add-form>
+
+  </div>
+</div>

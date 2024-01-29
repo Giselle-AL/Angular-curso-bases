@@ -1,23 +1,27 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { CounterModule } from './counter/counter.module';
 import { HeroModule } from './Hero/hero.module';
 
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { AnimeModule } from './anime/anime.module';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CounterModule,
     HeroModule,
+    AnimeModule
+
   ],
   providers: [
-    provideClientHydration()
+
   ],
   bootstrap: [AppComponent]
 })
