@@ -18,11 +18,8 @@ import { AnimeModule } from './anime/anime.module';
     CounterModule,
     HeroModule,
     AnimeModule
-
   ],
-  providers: [
-
-  ],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

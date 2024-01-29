@@ -4,7 +4,9 @@
 <div class="row">
   <div class="col">
     <!--componente de listado -->
-    <app-anime-list [strawhatslist]="strawhats"></app-anime-list>
+   <!--onDeleteID-->
+    <app-anime-list [strawhatslist]="Pirates"
+    (onDelete)="onDeleteCharacter($event)"></app-anime-list>
   </div>
   <div class="col">
     <!--Componente de formulario-->

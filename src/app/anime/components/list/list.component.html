@@ -15,6 +15,6 @@
            <span> Bounty: <strong> {{character.bounty}} </strong> </span> <br>
         </div>
 
-        <button class="btn btn-danger"> X </button>
+        <button (click)="onDeletePirate(character.id)" class="btn btn-danger"> X </button>
       </li>
   </ol>

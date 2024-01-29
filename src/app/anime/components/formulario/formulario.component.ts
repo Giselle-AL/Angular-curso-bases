@@ -29,7 +29,7 @@ export class FormularioComponent {
     if (this.character.name.length === 0) return;
     this.onNewCharacter.emit(this.character);
 
-    this.character={ name:" ", bounty:0};
+    this.character={ name:"", bounty:0};
   }
 
 }
